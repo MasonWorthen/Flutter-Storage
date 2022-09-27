@@ -17,9 +17,9 @@ class Storage {
     }
   }
 
-  Future<bool> write(String name, String value) async {
+  Future<bool> write(String name, String data) async {
     try {
-      await storage.write(key: name, value: token).then((value) async => {
+      await storage.write(key: name, value: data).then((value) async => {
         
           });
       return true;
